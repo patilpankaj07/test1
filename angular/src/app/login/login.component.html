@@ -1,0 +1,19 @@
+<!-- login.component.html -->
+<div class="container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+     
+
+        <label for="name">Username</label>
+
+        <input type="text" id="name" placeholder="Enter usename" [(ngModel)]="loginData.username" [ngModelOptions]="{standalone:true}">
+
+        <label for="name">Password</label>
+
+        <input type="password" id="name" placeholder="Enter password" [(ngModel)]="loginData.password" [ngModelOptions]="{standalone:true}">
+
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Not registered yet? <a href="/signup">Register here</a></p>
+</div>
